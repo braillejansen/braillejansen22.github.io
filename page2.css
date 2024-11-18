@@ -1,0 +1,12 @@
+p, h1 {
+    font-family: Orbitron;
+    background-size: 200%;
+    text-align: center;
+    color: #00ff00;
+}
+.box {
+    margin: 0 auto;
+    width: 90px;
+    height: 30px;
+    border-radius: 30x;
+}

@@ -1,0 +1,80 @@
+body {
+            background: linear-gradient(180deg, green, black);
+            font-family: Orbitron, sans-serif;
+            margin: 0 auto;
+            animation: gradientAnimation
+         10s infinite;
+         height: 100vh;
+         background-size: 400% 400%;
+         }
+         #solat1{
+             text-align: center;
+             font-family: Orbitron, 'Share Tech Mono', sans-serif;
+             color: #00ff00;
+         }
+        #text1{
+            text-align: center;
+            font-family: Orbitron, sans-serif;
+            color: #00ff00;
+            animation: flicker 10s infinite;
+        }
+        p {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            animation: flicker 15s infinite;
+            color: linear-gradient(left, green, black);
+        }
+        #text2 {
+            font-family: 'Share Tech Mono', sans-serif;
+            text-align: center;
+            color: #00ff00;
+            animation: flicker 1.5s infinite;
+            display: row;
+        }
+        
+        .centered-box {
+            margin: 20px auto;
+            width: 200px;
+            height: 50px;
+            background-color: black;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .centered-button {
+            width: 100px;
+            height: 45px;
+            background-color: #00ff00;
+            color: #000000;
+            font-weight: bold;
+            border: 1px solid;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+        .centered-button:hover {
+            background-color: #000000;
+            color: #00ff00;
+            transform: scale(1.1);
+        }
+        
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        @keyframes flicker {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.8;
+            }
+        }
